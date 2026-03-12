@@ -1,7 +1,7 @@
-#fundoColorido {
+/* #fundoColorido {
     width: 100%;
     background-color: var(--color01);
-}
+} */
 
 #containerBV01 {
     width: 80vw;
@@ -130,7 +130,7 @@
     }
 }
 
-/* Tablet */
+/* celular */
 @media screen and (min-width: 769px) and (max-width: 1180px) {
 
     #containerBV01 {
