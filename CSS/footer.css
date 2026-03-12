@@ -11,7 +11,7 @@ footer{
 #fundoInfo{
     width: 100%;
     background-color: var(--color01);
-    background-image: url(../IMG/fundoQuadriculado.png);
+    background-image: url(../IMG/fundoQuadriculado.webp);
     background-repeat: repeat;
     background-size: 600px;
     margin-top: 2rem;

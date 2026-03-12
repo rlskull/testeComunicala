@@ -8,7 +8,7 @@
     min-height: 77vh; /* alterado de height para min-height */
     margin: 0 auto;
     background-color: var(--color01);
-    background-image: url("../IMG/background_bem_vindo.png");
+    background-image: url("../IMG/background_bem_vindo.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -93,7 +93,7 @@
         grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
-        background-image: url("../IMG/background_bem_vindo_mobile.png");
+        background-image: url("../IMG/background_bem_vindo_mobile.webp");
         background-position: center;
         padding-bottom: 0; /* Para a imagem encostar no final */
     }

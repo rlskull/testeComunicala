@@ -8,7 +8,7 @@
     min-height: 77vh;
     margin: 0 auto;
     background-color:var(--color06);
-    background-image: url("../IMG/background_bem_vindo4.png");
+    background-image: url("../IMG/background_bem_vindo4.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -71,7 +71,7 @@
 @media screen and (max-width: 768px){
 
     #container01Contatos{
-        background-image: url("../IMG/background_bem_vindo_mobile4.png");
+        background-image: url("../IMG/background_bem_vindo_mobile4.webp");
         grid-template-columns: 1fr;
         padding-top: 50px;
         gap: 30px;

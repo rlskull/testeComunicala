@@ -8,7 +8,7 @@
     height: 77vh;
     margin: 0 auto;
     background-color:var(--color05);
-    background-image: url("../IMG/background_bem_vindo3.png");
+    background-image: url("../IMG/background_bem_vindo3.webp");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -64,7 +64,7 @@
         width: 90vw;
         height: 800px;
         grid-template-columns: repeat(6, 1fr);
-        background-image: url("../IMG/background_bem_vindo_mobile3.png");
+        background-image: url("../IMG/background_bem_vindo_mobile3.webp");
         background-position: center;
     }
 
