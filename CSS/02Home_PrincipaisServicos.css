@@ -19,13 +19,14 @@
 
 #simbolo01 {
     width: 100px;
+    height: auto;
     margin-right: 1rem;
 }
 
 /* Cores dos títulos */
 #imgBV02 .ttSubtitulos,
 #imgBV02 .ttTitulos {
-    color: var(--color05);
+    color: var(--color03);
 }
 
 /* ===============================
@@ -58,6 +59,7 @@
 
 .marcador {
     width: 80px;
+    height: auto;
 }
 
 /* Título do serviço */

@@ -58,7 +58,7 @@
 
 .caixaTXT .ttTitulos,
 .caixaTXT .ttSubtitulos {
-    color: var(--color04);
+    color: var(--color03);
 }
 
 /* ================= RESPONSIVO ================= */
@@ -69,6 +69,7 @@
         width: 90vw;
         min-height: auto;
         grid-template-columns: repeat(6, 1fr);
+        padding-bottom: 4rem;
     }
 
     #imgBV04 {
@@ -79,6 +80,7 @@
 
     #imgLogo04 {
         width: 300px;
+        height: auto;
     }
 
     #containerBV04 .caixaTXT {
@@ -98,5 +100,6 @@
 
     #imgLogo04 {
         width: 400px;
+        height: auto;
     }
 }

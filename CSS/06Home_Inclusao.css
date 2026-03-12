@@ -30,7 +30,7 @@
 
 .caixaTXT .ttTitulos,
 .caixaTXT .ttSubtitulos {
-    color: var(--color04);
+    color: var(--color03);
 }
 
 /* ================= RESPONSIVO ================= */
@@ -38,25 +38,39 @@
 @media screen and (max-width: 768px) {
 
     #containerBV06 {
-        width: 90vw;
+        width: 100%; /* Largura total para a imagem encostar nas bordas se necessário */
         min-height: auto;
-        grid-template-columns: repeat(6, 1fr);
-    }
-
-    #imgBV06 {
-        grid-column: 1 / span 6;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #imgPadrao02 {
-        width: 400px;
+        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0; /* Removendo padding para a imagem encostar no final */
     }
 
     #containerBV06 .caixaTXT {
-        margin-top: 3rem;
+        order: 1; /* Título e texto primeiro */
+        width: 90vw;
+        margin: 3rem auto 2rem auto;
+        padding: 0 20px;
         align-items: center;
         text-align: center;
+    }
+
+    #imgBV06 {
+        order: 2; /* Imagem por último */
+        grid-column: 1 / span 6;
+        width: 100%;
+        justify-content: center;
+        align-items: flex-end;
+        margin-top: 0;
+        line-height: 0; /* Remove pequenos espaços abaixo da imagem */
+    }
+
+    #imgPadrao02 {
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -66,6 +80,7 @@
 
     #imgPadrao02 {
         width: 480px;
+        height: auto;
     }
 
 }
