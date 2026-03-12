@@ -1,0 +1,166 @@
+#formContato{
+    display: flex;
+    flex-direction: column;
+
+    max-width: 560px;
+    padding: 30px 35px;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+#formContato fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 14px; /* Reduzido de 18px */
+}
+
+/* Tipografia herdando seu sistema */
+#formContato input,
+#formContato textarea{
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-padrao);
+    font-size: var(--tamanho-TXTpadrao);
+}
+
+/* Estrutura dos campos */
+.grupoInput{
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Reduzido de 8px */
+}
+
+.grupoInput label{
+    font-family: var(--fonte-titulos);
+    font-size: 0.75rem;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--color02);
+    margin-bottom: 2px;
+}
+
+/* Inputs modernos com leve preenchimento */
+.grupoInput input,
+.grupoInput textarea{
+    padding: 10px 14px; /* Reduzido */
+
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+
+    color: var(--color08);
+
+    transition: 
+        border 0.3s ease,
+        background 0.3s ease,
+        transform 0.2s ease;
+}
+
+.grupoInput input::placeholder,
+.grupoInput textarea::placeholder{
+    color: rgba(255,255,255,0.6);
+}
+
+/* Interação mais moderna */
+.grupoInput input:focus,
+.grupoInput textarea:focus{
+    outline: none;
+    border: 1px solid var(--color04);
+    background: rgba(255,255,255,0.18);
+    transform: translateY(-2px);
+}
+
+.grupoInput textarea{
+    resize: none;
+    min-height: 70px; /* Reduzido de 90px */
+}
+
+/* Botões */
+.grupoBotoes{
+    display: flex;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+.btnEnviar{
+    flex: 2;
+
+    padding: 14px 24px;
+    background-color: var(--color05);
+    color: var(--color08);
+
+    border: none;
+    border-radius: 10px;
+
+    font-family: var(--fonte-titulos);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.btnEnviar:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.btnLimpar{
+    flex: 1;
+
+    padding: 14px 24px;
+    background: transparent;
+    color: var(--color08);
+
+    border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 10px;
+
+    font-family: var(--fonte-principal);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    cursor: pointer;
+    transition: 
+        background 0.3s ease,
+        border 0.3s ease;
+}
+
+.btnLimpar:hover{
+    background: rgba(255,255,255,0.1);
+    border: 1px solid var(--color04);
+}
+
+/* Responsivo */
+@media screen and (max-width: 768px){
+
+    #container01Contatos{
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* CENTRALIZA HORIZONTALMENTE */
+    }
+
+    .ladoDireito{
+        order: 1;
+        width: 100%;
+    }
+
+    #formContato{
+        order: 2;
+        width: 100%;
+        max-width: 500px; /* mantém elegante */
+    }
+
+}

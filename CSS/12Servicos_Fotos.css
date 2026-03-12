@@ -1,0 +1,162 @@
+
+#containerFotos{
+    width: 80vw;
+    /* height: 100vh; */
+    margin: 0 auto;
+    /* background-color: var(--color07); */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+    padding-bottom: 150px;
+}
+
+#imgBV02{
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2px;
+    margin-top: 1rem;
+} 
+
+#simbolo01{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+#imgBV02 .ttSubtitulos,
+#imgBV02 .ttTitulos{
+    color: var(--color03);
+    /* font-weight: var(--peso-subtitulo); */
+}
+
+/*Galeria*/
+#galeriaFotos{
+    grid-column: 2 / span 10; 
+    grid-row: 3 / span 6; 
+    /* background-color: var(--color01);  */
+    margin-top: 4rem; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+}
+
+/*imagens individuais*/
+.fotoGaleria{ 
+    width: 100%; aspect-ratio: 1 / 1; /* garante quadrado */ object-fit: cover; /* não distorce */ 
+    border-radius: 20px; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+} 
+.fotoGaleria:hover{ 
+    transform: scale(1.05);
+} 
+
+/*Modal*/ 
+#modalGaleria{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#modalGaleria img{
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 20px;
+}
+
+#fecharModal{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#anterior,
+#proximo{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+}
+
+#anterior{
+    left: 40px;
+}
+
+#proximo{
+    right: 40px;
+}
+
+/*responsivo*/
+@media (max-width: 768px) {
+    #containerFotos{
+        width: 80vw;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    #imgTituloServicos{
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 1;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #galeriaFotos{
+        grid-column: 1 / span 6; 
+        grid-row: 3 / span 6; 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+}
+
+/* @media (max-width: 1024px){
+    #galeriaFotos{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #containerFotos{
+        width: 90vw;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+     #imgBV02{
+        grid-column: 1 / span 12;
+        grid-row: 1 / span 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2px;
+        margin-top: 2rem;
+    } 
+
+    #galeriaFotos{
+        grid-column: 1 / span 6;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    #galeriaFotos{
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    #containerFotos{
+        width: 95vw;
+    }
+} */

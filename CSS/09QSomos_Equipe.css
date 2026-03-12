@@ -1,0 +1,219 @@
+#containerQS03{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#imgTituloQS{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2px;
+    /* margin-top: 2rem; */
+} 
+
+#simbolo01{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+#imgTituloQS h2.ttSubtitulos,
+#imgTituloQS h1.ttTitulos{
+    color: var(--color05);
+    /* font-weight: var(--peso-subtitulo); */
+}
+
+#equipeQS{
+    grid-column: 2 / span 10;
+    grid-row: 3 / span 1;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 por linha FIXO */
+    gap: 20px;
+
+    justify-items: center;  /* centraliza cada item */
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+
+
+/* --- Overlay SAIBA MAIS --- */
+.equipe {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+
+    /* animação de entrada */
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* quando ganhar a classe .show (via JS), aparece suavemente */
+.equipe.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.equipe img {
+    width: 200px;
+    display: block;
+    filter: grayscale(0%) !important;
+    transition: .3s ease;
+    border-radius: 16px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+
+.overlay.ttTitulos{
+    color: var(--color04);
+}
+
+.equipe:hover img {
+    opacity: 0.3;
+    filter: grayscale(100%) !important;
+    transition: .3s ease;
+}
+
+.equipe:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/* --- Modal --- */
+.modal {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.772);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Wrapper geral — imagem + caixa */
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+/* IMAGEM SOLTA DO LADO ESQUERDO */
+.modal-left img {
+    width: 260px;
+    height: auto;
+    border-radius: 16px;
+    /* box-shadow: 0 4px 12px rgba(0,0,0,0.2); */
+}
+
+/* CAIXA DE TEXTO */
+.modal-content {
+    background:#f7f7f2;
+    padding: 3rem;
+    width: 450px;
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Botão X */
+.close-modal {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/*TITULO*/
+#modalTitulo {
+
+    color: var(--color05);
+}
+
+
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 768px){
+    #containerQS03{
+        width: 90vw;
+        height: auto;
+        min-height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    #imgTituloQS{
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 3;
+        justify-content: center;
+        margin-top: 5rem;
+        
+    } 
+  
+    /* ⬇ AQUI entra o grid da equipe no mobile */
+    #equipeQS{
+        grid-column: 1 / span 6;      /* ocupa toda a largura das 6 colunas */
+        grid-row: 4 / span 6;         /* posiciona abaixo do título (ajusta se quiser) */
+        grid-template-columns: 1fr;   /* 1 por linha */
+        gap: 30px;
+        justify-items: center;
+        margin-top: 10rem;
+    }
+
+    .equipe img{
+        width: 220px;                 /* tamanho legal pro mobile */
+    }
+    .modal-wrapper {
+        flex-direction: column;
+        width: 90%;
+        gap: 1.5rem;
+        align-items: center;
+    }
+
+    .modal-left img {
+        width: 220px;
+        margin: 0 auto;
+    }
+
+    .modal-content {
+        width: 100%;
+        padding: 1.8rem;
+    }
+
+    #modalTitulo {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    #modalConteudo {
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .close-modal {
+        right: 10px;
+        top: 10px;
+        font-size: 1.8rem;
+    }
+
+}

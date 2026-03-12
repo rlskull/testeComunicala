@@ -1,0 +1,151 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+
+/* Variáveis globais definidas em :root */
+:root {
+  --fonte-titulos: "Palanquin Dark", sans-serif;
+
+  --fonte-principal: "Darker Grotesque", sans-serif;
+  --peso-padrao: 400;
+  --peso-sub: 450;
+  --peso-light: 300;
+  --peso-negrito: 800;
+
+  /* Tamanhos de fonte com rem */
+  --tamanho-TXTtitulos:clamp(1.3rem, 4vw, 1.6rem); /*clamp(valorMínimo, valorIdeal, valorMáximo)*/
+  --tamanho-TXTsubtitulos: clamp(1.2rem, 3vw, 1.4rem);
+  --tamanho-TXTpadrao:clamp(1.3rem, 2vw, 1.3rem);
+
+   /* Cores */
+  --cor-texto: #3a3335;
+  --color01:#3a3335;
+  --color02:#602505;
+  --color03:#b84709;
+  --color04:#f15a24;
+  --color05:#f7931e;
+  --color06:#48736b;
+  --color07:#c6d8d3;
+  --color08:#f7f7f2;
+  --color09:#9c3c08;
+
+/*variaveis para os links*/
+/* LINKS DO MENU*/
+--link-inicio:"index.html";
+--link-quemsomos:"quemsomos.html";
+--link-servicos:"servicos.html";
+--link-parceiros:"parceiros.html";
+--link-contatos:"contatos.html";
+
+/*LINKS REDES SOCIAIS*/
+--link-whatsapp:"https://wa.me/5511987654321";
+--link-instagram:"https://www.instagram.com/comunicala.tils/";
+--link-linkedin:"https://www.linkedin.com/in/comunicala-vozes-entre-os-povos-5a1a68219/?originalSubdomain=br";
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .bloco-titulo {
+  line-height: 0.7;        /* diminui o espaçamento entre linhas */
+
+.ttTitulos{
+    font-family: var(--fonte-titulos);
+    font-weight: var(--peso-negrito);
+    font-size: var(--tamanho-TXTtitulos);
+    margin-bottom: 0.2rem; /* diminui o espaço abaixo do título */
+}
+
+.ttSubtitulos{
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-sub);
+    font-size: var(--tamanho-TXTsubtitulos);
+    margin-top: 0;
+}
+
+.ttPadrao{
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-padrao);
+    font-size: var(--tamanho-TXTpadrao);
+    text-align: justify;
+    margin-top: 1.2rem;
+
+}
+
+.titulosAgrupados{
+    display: flex;
+    flex-direction: column;
+    line-height: 1;  
+}
+
+.visually-hidden{
+    position:absolute;
+    width:1px;
+    height:1px;
+    padding:0;
+    margin:-1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+    border:0;
+}
+
+
+/* deixando o fundo branco */
+.fundoBranco{
+  width: 100%;
+  background-color: white;
+}
+
+
+/*efeito preto e branco para colorido*/
+
+.img-bw {
+    filter: grayscale(100%);
+    transition: filter 0.4s ease-in-out;
+}
+
+.img-colorido {
+    filter: grayscale(0%) !important;
+}
+
+
+
+
+/*caixa formatação de texto*/
+
+.caixaTXT{
+    grid-column: 7 / span 5;
+    grid-row: 2 / span 5;
+    color: var(--color08);
+    font-family: var(--fonte-principal);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+    /* margin-right: 20px; */
+}
+
+/*caixa responsiva*/
+@media screen and (max-width: 768px){
+
+     .caixaTXT{
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 5;
+    padding-left: 35px;
+    padding-right: 30px;
+    }
+
+    /* mais o botão */
+    #btnBemVindos{
+    grid-column: 5 / span 3;
+    grid-row: 6 / span 2;
+    }
+}
+
+

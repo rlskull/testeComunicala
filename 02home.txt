@@ -1,0 +1,172 @@
+ <!-- Section de HOME Servicos 02 -->
+        <section class="fundoBranco">
+
+            <div id="containerBV02">
+
+                <!--título principais serviços-->
+                <div id="imgBV02">
+                    <img id="simbolo01" src="./IMG/imgppservicos.png" alt="texto">
+                    <div class="titulosAgrupados">
+                        <h2 class="ttSubtitulos">PRINCIPAIS</h2>
+                        <h1 class="ttTitulos">SERVIÇOS</h1>
+                    </div>
+                </div>
+
+                <!--principais serviços-->
+                <div id="seisServicos">
+                    <div class="servicoIndividual fade-in">
+                        <img class="marcador" src="./IMG/marcado01.png" alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                    <div class="servicoIndividual fade-in">
+                        <img class="marcador" src="./IMG/marcado02.png" alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                    <div class="servicoIndividual fade-in">
+                        <img class="marcador" src="./IMG/marcado03.png" alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                    <div class="servicoIndividual fade-in">
+                        <img class="marcador" src="./IMG/marcado04.png" alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                    <div class="servicoIndividual fade-in"> <img class="marcador" src="./IMG/marcado05.png"
+                            alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                    <div class="servicoIndividual fade-in">
+                        <img class="marcador" src="./IMG/marcado06.png" alt="ícone marcador de lista">
+                        <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                        <p class="ttPadrao">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere rem
+                            consectetur dolores est aut magni? </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+
+
+#containerBV02{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    /* background-color: var(--color07); */
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#imgBV02{
+    grid-column: 2 / span 2;
+    grid-row: 2 / span 1;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 2px;
+    /* margin-top: 2rem; */
+} 
+
+
+
+#simbolo01{
+    width: 100px;
+    margin-right: 1rem;
+}
+
+#imgBV02 h2.ttSubtitulos,
+#imgBV02 h1.ttTitulos{
+    color: var(--color05);
+    /* font-weight: var(--peso-subtitulo); */
+}
+
+
+/*6 principais serviços*/
+
+#seisServicos{
+    grid-column: 2 / span 10;
+    grid-row: 2 / span 6;
+    /* background-color: var(--color01); */
+    margin-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.servicoIndividual{
+    /* background-color: var(--color02); */
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marcador{
+    width: 80px;
+}
+
+#seisServicos h3.ttSubtitulos{
+    color: var(--color01);
+    text-align: center;
+    font-weight: var(--peso-negrito);
+}
+
+#seisServicos p.ttPadrao{
+    color: var(--color01);
+    text-align: center;
+}
+
+
+
+/*RESPONSIVO*/
+
+@media screen and (max-width: 768px){
+    #containerBV02{
+        width: 90vw;
+        height: auto;
+        min-height: 100vh;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+    }
+
+    #imgBV02{
+        grid-column: 1 / span 6;
+        grid-row: 2 / span 3;
+        justify-content: center;
+        margin-top: 5rem;
+        
+    } 
+
+    #seisServicos{
+    grid-column: 1 / span 6;
+    grid-row: 6 / span auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;                
+    margin-top: 21rem;
+    margin-bottom: 8rem;
+    }
+
+    .servicoIndividual{
+        width: 48%;
+        /* margin-bottom: 3rem; */
+    }
+}

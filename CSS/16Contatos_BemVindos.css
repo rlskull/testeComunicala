@@ -1,0 +1,85 @@
+#fundoColorido{
+    width: 100%;
+    background-color: var(--color06);
+}
+
+#container01Contatos{
+    width: 80vw;
+    min-height: 77vh;
+    margin: 0 auto;
+    background-color:var(--color06);
+    background-image: url("../IMG/background_bem_vindo4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+
+    align-items: start;
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+
+
+#container01Contatos .caixaTXT{
+    grid-column: 1 / span 6;
+}
+
+
+.ladoDireito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#imgBV01{
+    display: flex;
+    align-items: flex-end; /* faz a imagem ficar no final vertical da célula */
+    justify-content: flex-start; /* ajusta horizontalmente se necessário */
+    height: 100%; /* importante para que o flex alinhe até o fundo */
+    padding: 0; 
+}
+
+#imgLogo04{
+    width: 100%;
+    max-width: 330px;
+    height: auto;
+    display: block;
+    /* evita margens/padding inesperados que empurram para cima */
+    margin: auto;
+}
+
+#container01Contatos h1.ttTitulos{
+    color: var(--color05);
+    margin-top: 2rem;
+}
+
+#container01Contatos h2.ttSubtitulos{
+    color: var(--color04);
+    font-weight: var(--peso-light);
+}
+
+#container01Contatos p.ttPadrao {
+  color: var(--color08);
+  margin-top: 2rem;
+}
+
+
+/* Estilos responsivos para telas menores */
+
+@media screen and (max-width: 768px){
+
+    #container01Contatos{
+        background-image: url("../IMG/background_bem_vindo_mobile4.png");
+        grid-template-columns: 1fr;
+        padding-top: 50px;
+        gap: 30px;
+    }
+
+    #imgBV01{
+        justify-content: center;
+    }
+
+
+}

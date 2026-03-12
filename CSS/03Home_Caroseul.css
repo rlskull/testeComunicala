@@ -1,0 +1,88 @@
+/* ===============================
+   Section Parceiros
+================================= */
+
+#home03Caroseul {
+    width: 100%;
+    min-height: 20vh; /* substitui height fixa */
+    background-color: var(--color08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Título */
+#infparceiros {
+    width: 80vw;
+    min-height: 5vh;
+    margin: 0 auto;
+}
+
+#infparceiros .ttTitulos {
+    color: var(--color02);
+    font-size: 0.9rem;
+    padding: 15px 0 0 90px;
+}
+
+/* ===============================
+   Container do Carrossel
+================================= */
+
+#containerCaroseul {
+    width: 100%;
+    min-height: 12vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+/* Track animado */
+.carrossel-track {
+    display: flex;
+    gap: 40px;
+    animation: deslizar 30s linear infinite;
+}
+
+/* Logos */
+.carrossel-track img {
+    height: 80px;
+    object-fit: contain;
+    filter: grayscale(20%);
+    opacity: 0.9;
+}
+
+/* ===============================
+   Animação
+================================= */
+
+@keyframes deslizar {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* ===============================
+   Acessibilidade Movimento
+================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    .carrossel-track {
+        animation: none;
+    }
+}
+
+/* ===============================
+   Responsivo
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    #infparceiros .ttTitulos {
+        font-size: 0.6rem;
+        padding: 15px 0 0 10px;
+    }
+
+}

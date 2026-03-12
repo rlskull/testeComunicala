@@ -1,0 +1,27 @@
+        <!--Section o poder da inclusão na sua empresa 06-->
+        <section class="fundoBranco">
+            <div id="containerBV06">
+                <div id="imgBV06">
+                    <img id="imgPadrao02" class="fade-in img-bw imagemPersistente" src="./IMG/imgPadrao02.png"
+                        alt="logocompleto">
+                </div>
+                <div class="caixaTXT">
+                    <div class="titulosAgrupados">
+                        <h2 class="ttSubtitulos">PODER DA INCLUSÃO</h2>
+                        <h1 class="ttTitulos">NA SUA EMPRESA</h1>
+                    </div>
+                    <p class="ttPadrao">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        <br>
+
+                        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                        delenit augue duis dolore te feugait nulla facilisi, Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    

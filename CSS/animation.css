@@ -1,0 +1,14 @@
+/*Efeito de animação*/
+
+/* Estado inicial: invisível e levemente deslocado */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Quando aparecer na tela */
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}

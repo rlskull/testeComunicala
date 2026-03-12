@@ -1,0 +1,103 @@
+#fundoColorido{
+    width: 100%;
+    background-color: var(--color09);
+}
+
+#containerBV01{
+    width: 80vw;
+    height: 77vh;
+    margin: 0 auto;
+    background-color:var(--color09);
+    background-image: url("../IMG/background_bem_vindo2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#imgBV01{
+    grid-column: 1 / span 7;
+    grid-row: 3 / span 7; 
+    display: flex;
+    align-items: flex-end; /* faz a imagem ficar no final vertical da célula */
+    justify-content: flex-start; /* ajusta horizontalmente se necessário */
+    height: 100%; /* importante para que o flex alinhe até o fundo */
+    padding: 0; 
+}
+
+#imgLogo03{
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    /* evita margens/padding inesperados que empurram para cima */
+    margin: 0;
+}
+
+
+
+#btnBemVindos{
+    grid-column: 9 / span 3;
+    grid-row: 6 / span 2;
+    background-color: var(--color04);
+    color: var(--color08);
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-negrito);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+    margin-top: 1.5rem;;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    transition: transform .2s ease, color .2s ease;
+}
+
+#btnBemVindos:hover{
+    transform: scale(1.2);
+    background-color: var(--color03);
+}
+
+#containerBV01 h1.ttTitulos{
+    color: var(--color04);
+    margin-top: 2rem;
+}
+
+#containerBV01 h2.ttSubtitulos{
+    color: var(--color04);
+    font-weight: var(--peso-light);
+}
+
+#containerBV01 p.ttPadrao {
+  color: var(--color08);
+  margin-top: 2rem;
+}
+
+
+/* Estilos responsivos para telas menores */
+
+@media screen and (max-width: 768px){
+    #containerBV01{
+        width: 90vw;
+        height: 800px;
+        grid-template-columns: repeat(6, 1fr);
+        background-image: url("../IMG/background_bem_vindo_mobile2.png");
+        background-position: center;
+    }
+
+    #imgBV01{
+        grid-column: 1 / span 7;
+        grid-row: 5 / span 6;
+        justify-content: center;
+
+    }
+
+
+}

@@ -1,0 +1,66 @@
+#home05depoimento {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+
+    background-image: url("../IMG/fotoparalaxes.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Camada escura */
+#home05depoimento::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #3a3335d4;
+}
+
+/* Conteúdo */
+#home05depoimento .conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 500px;
+    padding: 20px;
+    color: #fff;
+}
+
+/* Depoimento */
+#home05depoimento blockquote {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+/* Autor */
+#home05depoimento .autor {
+    text-align: right;
+    margin-top: 15px;
+}
+
+#home05depoimento cite {
+    color: var(--color05);
+    font-style: normal;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    #home05depoimento {
+        background-attachment: scroll;
+        min-height: 60vh;
+        padding: 60px 20px;
+    }
+}
+
+/* Redução de movimento */
+@media (prefers-reduced-motion: reduce) {
+    #home05depoimento {
+        background-attachment: scroll;
+    }
+}

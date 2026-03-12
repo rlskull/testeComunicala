@@ -1,0 +1,134 @@
+#fundoColorido {
+    width: 100%;
+    background-color: var(--color01);
+}
+
+#containerBV01 {
+    width: 80vw;
+    min-height: 77vh; /* alterado de height para min-height */
+    margin: 0 auto;
+    background-color: var(--color01);
+    background-image: url("../IMG/background_bem_vindo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    gap: 5px;
+}
+
+#imgBV01 {
+    grid-column: 1 / span 7;
+    grid-row: 3 / span 7;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    height: 100%;
+    padding: 0;
+}
+
+#imgLogo03 {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+}
+
+/* Botão agora é link */
+#btnBemVindos {
+    grid-column: 9 / span 3;
+    grid-row: 6 / span 2;
+    background-color: var(--color04);
+    color: var(--color08);
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-negrito);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: auto;
+    margin-top: 1.5rem;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: transform .2s ease, background-color .3s ease, color .2s ease;
+}
+
+/* Hover */
+#btnBemVindos:hover {
+    transform: scale(1.05); /* reduzido para evitar impacto em layout */
+    background-color: var(--color03);
+}
+
+/* Foco acessível */
+#btnBemVindos:focus-visible {
+    outline: 3px solid var(--color08);
+    outline-offset: 4px;
+}
+
+/* Tipografia dentro da seção */
+#containerBV01 h1.ttTitulos {
+    color: var(--color04);
+    margin-top: 2rem;
+}
+
+#containerBV01 .ttSubtitulos {
+    color: var(--color04);
+    font-weight: var(--peso-light);
+}
+
+#containerBV01 p.ttPadrao {
+    color: var(--color08);
+    margin-top: 2rem;
+}
+
+/* Responsivo Mobile */
+@media screen and (max-width: 768px) {
+
+    #containerBV01 {
+        width: 90vw;
+        min-height: 860px;
+        grid-template-columns: repeat(6, 1fr);
+        background-image: url("../IMG/background_bem_vindo_mobile.png");
+        background-position: center;
+    }
+
+    #imgBV01 {
+        grid-column: 1 / span 7;
+        grid-row: 5 / span 6;
+        justify-content: center;
+    }
+
+    .caixaTXT {
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 5;
+        padding-left: 35px;
+        padding-right: 30px;
+    }
+
+    #btnBemVindos {
+        grid-column: 5 / span 3;
+        grid-row: 6 / span 2;
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1180px) {
+
+    #containerBV01 {
+        width: 90vw;
+        min-height: 80vh;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+    }
+
+    #imgBV01 {
+        grid-column: 1 / span 7;
+        grid-row: 1 / span 8;
+        justify-content: center;
+        width: 80%;
+    }
+}

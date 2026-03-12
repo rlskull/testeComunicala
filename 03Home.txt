@@ -1,0 +1,109 @@
+<!--Caroseul parceiros 03-->
+        <section id="home03Caroseul">
+            <div id="infparceiros">
+                <h1 class="ttTitulos">PARCEIROS</h1>
+            </div>
+            <div id="containerCaroseul">
+                <div class="carrossel-track">
+                    <img class="frImgCa" src="./IMG/plogo01.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo02.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo03.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo04.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo05.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo06.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo07.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo08.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo09.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo10.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo11.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo12.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo13.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo14.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo15.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo16.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo17.png" alt="logo parceiro 1">
+
+                    <!--Repetição para o efeito continuo-->
+                    <img class="frImgCa" src="./IMG/plogo01.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo02.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo03.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo04.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo05.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo06.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo07.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo08.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo09.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo10.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo11.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo12.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo13.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo14.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo15.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo16.png" alt="logo parceiro 1">
+                    <img class="frImgCa" src="./IMG/plogo17.png" alt="logo parceiro 1">
+
+                </div>
+            </div>
+        </section>
+
+
+
+        #home03Caroseul{
+    width: 100%;
+    height: 20vh;
+    background-color: var(--color08);
+}
+
+#infparceiros{
+    width: 80vw;
+    height: 5vh;
+    margin: 0 auto;
+}
+
+#infparceiros h1.ttTitulos{
+    color: var(--color02);
+    font-size:0.9rem;
+    padding: 15px 0 0 90px;
+}
+
+#containerCaroseul{
+    width: 100%;
+    height: 15vh;
+}
+
+
+/* Estilos para o carrossel de parceiros */
+#containerCaroseul {
+    width: 100%;
+    height: 12vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.carrossel-track {
+    display: flex;
+    gap: 40px;
+    animation: deslizar 30s linear infinite;
+}
+
+.carrossel-track img {
+    height: 80px; /* Ajuste como quiser */
+    object-fit: contain;
+    filter: grayscale(20%); /* opcional, deixar mais uniforme */
+    opacity: 0.9;
+}
+
+/* Animação */
+@keyframes deslizar {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}
+
+@media screen and (max-width:768px){
+    
+#infparceiros h1.ttTitulos{
+    font-size:0.6rem;
+    padding: 15px 0 0 10px;
+}
+}

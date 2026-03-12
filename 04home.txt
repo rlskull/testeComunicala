@@ -1,0 +1,28 @@
+      <!-- Section pq nos escolher 04-->
+        <section class="fundoBranco">
+
+            <div id="containerBV04">
+                <div id="imgBV04">
+                    <img id="imgLogo04" class="fade-in" src="./IMG/logo_04.png" alt="logocompleto">
+                </div>
+                <div class="caixaTXT">
+                    <div class="titulosAgrupados">
+                        <h2 class="ttSubtitulos">POR QUE NOS</h2>
+                        <h1 class="ttTitulos">ESCOLHER</h1>
+                    </div>
+                    <p class="ttPadrao">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                        nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                        <br>
+
+                        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                        delenit augue duis dolore te feugait nulla facilisi, Lorem ipsum dolor sit amet.
+                    </p>
+                    <button id="btnPPEscolher">SAIBA MAIS</button>
+                </div>
+            </div>
+        </section>
+
+
+        

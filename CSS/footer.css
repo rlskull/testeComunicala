@@ -1,0 +1,229 @@
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer{
+    width: 100%;
+    /* background-color: var(--color01); */
+}
+
+/* Fundo com textura */
+#fundoInfo{
+    width: 100%;
+    background-color: var(--color01);
+    background-image: url(../IMG/fundoQuadriculado.png);
+    background-repeat: repeat;
+    background-size: 600px;
+    margin-top: 2rem;
+}
+
+/* Container principal */
+#containerInfo{
+    width: 80vw;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+/* Agrupamento dos 3 blocos */
+#divFooterGroup{
+    grid-column: 1 / span 12;
+    grid-row: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Cada bloco interno */
+.divFooter{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+#logoFooter{
+    width: 180px;
+    padding-top: 3rem;
+}
+
+
+/* Texto institucional */
+.divFooter p.ttPadrao{
+    color: var(--color08);
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: var(--peso-light);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 0 50px;
+    padding-bottom: 3rem;
+}
+
+/* Títulos */
+.umFooter h2.ttTitulos{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color05);
+    font-size: 1rem;
+}
+
+/* Conteúdo abaixo do título */
+.doisFooter{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lista do mapa */
+#mapaSite li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links do mapa */
+#mapaSite li a{
+    text-decoration: none;
+    color: var(--color08);
+    font-family: var(--fonte-principal);
+    font-weight: var(--peso-light);
+    font-size: 1rem;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+}
+
+#mapaSite li a:hover{
+    color: var(--color05);
+}
+
+/* Foco acessível */
+#mapaSite li a:focus-visible,
+#socialFooter a:focus-visible,
+#contatoFooter a:focus-visible{
+    outline: 2px solid var(--color05);
+    outline-offset: 3px;
+}
+
+/* Contato */
+#contatoFooter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+    text-align: center;
+}
+
+/* Remove itálico do address */
+address{
+    font-style: normal;
+}
+
+/* Telefone */
+#contatoFooter a,
+#contatoFooter a:link,
+#contatoFooter a:visited,
+#contatoFooter a:hover,
+#contatoFooter a:active {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--color08) !important;
+    opacity: 1 !important;
+    font-weight: var(--peso-light) !important;
+}
+
+
+/* Redes sociais */
+#socialFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 3rem;
+}
+
+#socialFooter i.fa-brands{
+    color: var(--color05);
+    font-size: 1.5rem;
+    transition: transform .2s ease, color .2s ease;
+}
+
+#socialFooter i.fa-brands:hover{
+    transform: scale(1.2);
+    color: var(--color08);
+}
+
+/* Desenvolvedor */
+#desenvolvedor{
+    width: 80vw;
+    margin: 0 auto;
+    min-height: 8vh;
+}
+
+#desenvolvedor .ttSubtitulos{
+    color: var(--color08);
+    font-size: 0.9rem;
+    font-weight: var(--peso-light);
+    text-align: center;
+    margin: 0;
+    padding-top: 0.9rem;
+}
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media screen and (max-width:768px){
+
+    #containerInfo{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    #divFooterGroup{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .divFooter{
+        width: 100%;
+        text-align: center;
+    }
+
+    .umFooter h2.ttTitulos{
+        height: auto;
+        padding: 1rem 0;
+    }
+
+    .doisFooter{
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    #logoFooter{
+        padding-top: 1rem;
+    }
+
+    .divFooter p.ttPadrao{
+        padding: 0 20px 1.5rem 20px;
+    }
+
+    #socialFooter{
+        padding-bottom: 1rem;
+    }
+}
+

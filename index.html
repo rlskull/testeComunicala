@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/animation.css">
+    <link rel="stylesheet" href="./CSS/menu.css">
+    <link rel="stylesheet" href="./CSS/01Home_BemVindos.css">
+    <link rel="stylesheet" href="./CSS/02Home_PrincipaisServicos.css">
+    <link rel="stylesheet" href="./CSS/03Home_Caroseul.css">
+    <link rel="stylesheet" href="./CSS/04Home_PqEscolher.css">
+    <link rel="stylesheet" href="./CSS/05Home_Depoimento.css">
+    <link rel="stylesheet" href="./CSS/06Home_Inclusao.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body id="inicio" style="background-color: var(--color01);">
+    <a href="#conteudoPrincipal" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+    <header>
+        <div id="top_header">
+            <nav id="navbar" aria-label="Navegação principal">
+
+                <!-- Logo-->
+                <div id="logo_header">
+                    <a href="#inicio" aria-label="Ir para o início da página">
+                        <img id="logo01Header" src="./IMG/logo_01.png" alt="ComunicAla, Vozes entre os Povos">
+                    </a>
+                </div>
+
+                <div id="menu">
+
+                    <!-- Redes sociais -->
+                    <ul id="social_media">
+                        <li class="listMedias">
+                            <a href="tel:+5511999999999" id="tel" aria-label="Ligar para (11) 99999-9999">
+                                (11) 99999-9999
+                            </a>
+                        </li>
+
+                        <li class="listMedias">
+                            <a class="js-link" data-var="--link-whatsapp" href="https://wa.me/5511987654321"
+                                aria-label="Abrir WhatsApp da Comunicala">
+                                <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        <li class="listMedias">
+                            <a class="js-link" data-var="--link-linkedin" href="https://www.linkedin.com/company/comunicala"
+                                aria-label="Abrir LinkedIn da Comunicala">
+                                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                            </a>
+                        </li>
+
+                        <li class="listMedias">
+                            <a class="js-link" data-var="--link-instagram" href="https://www.instagram.com/comunicala.tils/"
+                                aria-label="Abrir Instagram da Comunicala">
+                                <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <!-- Menu principal -->
+                    <ul id="nav_list">
+                        <li class="list active">
+                            <a class="js-link" data-var="--link-inicio" href="#inicio">INÍCIO</a>
+                        </li>
+                        <li class="list">
+                            <a class="js-link" data-var="--link-quemsomos" href="#quemsomos">QUEM SOMOS</a>
+                        </li>
+                        <li class="list">
+                            <a class="js-link" data-var="--link-servicos" href="#servicos">SERVIÇOS</a>
+                        </li>
+                        <li class="list">
+                            <a class="js-link" data-var="--link-parceiros" href="#parceiros">PARCEIROS</a>
+                        </li>
+                        <li class="list">
+                            <a class="js-link" data-var="--link-contatos" href="#contatos">CONTATOS</a>
+                        </li>
+                    </ul>
+
+                    <!-- Botão mobile -->
+                    <button id="mobileBtn" aria-label="Abrir menu" aria-controls="mobileMenu" aria-expanded="false">
+                        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+                    </button>
+
+                    <!-- Menu mobile -->
+                    <div id="mobileMenu" hidden>
+                        <ul id="mobileNavList">
+                            <li class="list active">
+                                <a class="js-link" data-var="--link-inicio" href="#inicio">INÍCIO</a>
+                            </li>
+                            <li class="list">
+                                <a class="js-link" data-var="--link-quemsomos" href="#quemsomos">QUEM SOMOS</a>
+                            </li>
+                            <li class="list">
+                                <a class="js-link" data-var="--link-servicos" href="#servicos">SERVIÇOS</a>
+                            </li>
+                            <li class="list">
+                                <a class="js-link" data-var="--link-parceiros" href="#parceiros">PARCEIROS</a>
+                            </li>
+                            <li class="list">
+                                <a class="js-link" data-var="--link-contatos" href="#contatos">CONTATOS</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <main id="conteudoPrincipal">
+
+    <!-- Seção de Bem-vindos -->
+    <section id="fundoColorido" aria-labelledby="titulo-bemvindos">
+        <div id="containerBV01">
+
+            <div id="imgBV01">
+                <img 
+                    id="imgLogo03"
+                    class="img-bw imagemPersistente"
+                    src="./IMG/imgPadrao01.png"
+                    alt="Logotipo da Comunicala, tradução e interpretação em português e Libras">
+            </div>
+
+            <div class="caixaTXT">
+
+                <header class="titulosAgrupados">
+                    <h1 id="titulo-bemvindos" class="ttTitulos">Bem-vindos</h1>
+                    <p class="ttSubtitulos">
+                        Tradução e Interpretação no par linguístico português | Libras
+                    </p>
+                </header>
+
+                <p class="ttPadrao">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                    tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis
+                    nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                </p>
+
+                <p class="ttPadrao">
+                    Facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi, lorem ipsum dolor sit amet.
+                </p>
+
+                <a 
+                    id="btnBemVindos"
+                    href="https://wa.me/5511987654321"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Falar com a Comunicala pelo WhatsApp"
+                >
+                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                    Fale Conosco
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+
+<section class="fundoBranco" aria-labelledby="servicos-titulo">
+
+    <div id="containerBV02">
+
+        <!-- Título principal da seção -->
+        <div id="imgBV02">
+
+            <img id="simbolo01"
+                 src="./IMG/imgppservicos.png"
+                 alt=""
+                 aria-hidden="true">
+
+            <header class="titulosAgrupados">
+                <span class="ttSubtitulos">PRINCIPAIS</span>
+                <h2 id="servicos-titulo" class="ttTitulos">SERVIÇOS</h2>
+            </header>
+
+        </div>
+
+        <!-- Lista de serviços -->
+        <ul id="seisServicos" role="list">
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador"
+                     src="./IMG/marcado01.png"
+                     alt=""
+                     aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">
+                    Lorem ipsum dolor sit amet.
+                </p>
+            </li>
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador" src="./IMG/marcado02.png" alt="" aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador" src="./IMG/marcado03.png" alt="" aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador" src="./IMG/marcado04.png" alt="" aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador" src="./IMG/marcado05.png" alt="" aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+            <li class="servicoIndividual fade-in">
+                <img class="marcador" src="./IMG/marcado06.png" alt="" aria-hidden="true">
+                <h3 class="ttSubtitulos">Lorem Ipsum</h3>
+                <p class="ttPadrao">Lorem ipsum dolor sit amet.</p>
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+        <!-- Section Parceiros 03 -->
+<section id="home03Caroseul" aria-labelledby="titulo-parceiros">
+
+    <div id="infparceiros">
+        <h2 id="titulo-parceiros" class="ttTitulos">
+            Parceiros
+        </h2>
+    </div>
+
+    <div id="containerCaroseul" role="region" aria-label="Carrossel de logotipos de parceiros">
+        <div class="carrossel-track">
+
+            <!-- Logos -->
+            <img class="frImgCa" src="./IMG/plogo01.png" alt="Logotipo do Parceiro 1">
+            <img class="frImgCa" src="./IMG/plogo02.png" alt="Logotipo do Parceiro 2">
+            <img class="frImgCa" src="./IMG/plogo03.png" alt="Logotipo do Parceiro 3">
+            <img class="frImgCa" src="./IMG/plogo04.png" alt="Logotipo do Parceiro 4">
+            <img class="frImgCa" src="./IMG/plogo05.png" alt="Logotipo do Parceiro 5">
+            <img class="frImgCa" src="./IMG/plogo06.png" alt="Logotipo do Parceiro 6">
+            <img class="frImgCa" src="./IMG/plogo07.png" alt="Logotipo do Parceiro 7">
+            <img class="frImgCa" src="./IMG/plogo08.png" alt="Logotipo do Parceiro 8">
+            <img class="frImgCa" src="./IMG/plogo09.png" alt="Logotipo do Parceiro 9">
+            <img class="frImgCa" src="./IMG/plogo10.png" alt="Logotipo do Parceiro 10">
+            <img class="frImgCa" src="./IMG/plogo11.png" alt="Logotipo do Parceiro 11">
+            <img class="frImgCa" src="./IMG/plogo12.png" alt="Logotipo do Parceiro 12">
+            <img class="frImgCa" src="./IMG/plogo13.png" alt="Logotipo do Parceiro 13">
+            <img class="frImgCa" src="./IMG/plogo14.png" alt="Logotipo do Parceiro 14">
+            <img class="frImgCa" src="./IMG/plogo15.png" alt="Logotipo do Parceiro 15">
+            <img class="frImgCa" src="./IMG/plogo16.png" alt="Logotipo do Parceiro 16">
+            <img class="frImgCa" src="./IMG/plogo17.png" alt="Logotipo do Parceiro 17">
+
+            <!-- Repetição para efeito contínuo (decorativo para o leitor de tela) -->
+            <img class="frImgCa" src="./IMG/plogo01.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo02.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo03.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo04.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo05.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo06.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo07.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo08.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo09.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo10.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo11.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo12.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo13.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo14.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo15.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo16.png" alt="" aria-hidden="true">
+            <img class="frImgCa" src="./IMG/plogo17.png" alt="" aria-hidden="true">
+
+        </div>
+    </div>
+
+</section>
+
+  <!-- Section Por que nos escolher 04 -->
+<section class="fundoBranco" aria-labelledby="titulo-escolher">
+    <div id="containerBV04">
+        <div id="imgBV04">
+            <img 
+                id="imgLogo04"
+                class="fade-in"
+                src="./IMG/logo_04.png"
+                alt=""
+                aria-hidden="true">
+        </div>
+
+        <div class="caixaTXT">
+            <header class="titulosAgrupados">
+                <span class="ttSubtitulos">POR QUE NOS</span>
+                <h2 id="titulo-escolher" class="ttTitulos">ESCOLHER</h2>
+            </header>
+            <p class="ttPadrao">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+
+            <p class="ttPadrao">
+                Facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+
+            <a 
+                id="btnPPEscolher"
+                href="quemsomos.html"
+                aria-label="Saiba mais sobre por que escolher a Comunicala">
+                Saiba mais
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Section Depoimento -->
+<section id="home05depoimento" aria-labelledby="titulo-depoimento">
+
+    <h2 id="titulo-depoimento" class="visually-hidden">
+        Depoimento
+    </h2>
+
+    <div class="conteudo">
+
+        <blockquote class="ttPadrao">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+        </blockquote>
+
+        <p class="autor">
+            <cite class="ttTitulos">Nome - Empresa</cite>
+        </p>
+
+    </div>
+
+</section>
+
+<!-- Section O Poder da Inclusão 06 -->
+<section class="fundoBranco" aria-labelledby="titulo-inclusao">
+
+    <div id="containerBV06">
+
+        <div id="imgBV06">
+            <img
+                id="imgPadrao02"
+                class="fade-in img-bw imagemPersistente"
+                src="./IMG/imgPadrao02.png"
+                alt=""
+                aria-hidden="true">
+        </div>
+
+        <div class="caixaTXT">
+
+            <header class="titulosAgrupados">
+                <span class="ttSubtitulos">PODER DA INCLUSÃO</span>
+                <h2 id="titulo-inclusao" class="ttTitulos">
+                    NA SUA EMPRESA
+                </h2>
+            </header>
+
+            <p class="ttPadrao">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+
+            <p class="ttPadrao">
+                Facilisis at vero eros et accumsan et iusto odio dignissim
+                qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <footer>
+    <div id="fundoInfo">
+        <div id="containerInfo">
+            <div id="divFooterGroup">
+
+                <!-- BLOCO 1 -->
+                <section class="divFooter" aria-labelledby="footer-sobre">
+                    <h2 id="footer-sobre" class="visually-hidden">Sobre o projeto</h2>
+
+                    <img id="logoFooter"
+                         src="./IMG/logo_01.png"
+                         alt="Logotipo do projeto ComunicAla Vozes entre os Povos">
+
+                    <p class="ttPadrao">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                        tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                </section>
+
+                <!-- BLOCO 2 -->
+                <nav class="divFooter" aria-labelledby="footer-mapa">
+                    <div class="umFooter">
+                        <h2 id="footer-mapa" class="ttTitulos">MAPA DO SITE</h2>
+                    </div>
+
+                    <div class="doisFooter titulosAgrupados">
+                        <ul id="mapaSite" role="list">
+                            <li class="itensMapaSite ttPadrao">
+                                <a class="js-link" data-var="--link-inicio" href="index.html">INÍCIO</a>
+                            </li>
+                            <li class="itensMapaSite ttPadrao">
+                                <a class="js-link" data-var="--link-quemsomos" href="quemsomos.html">QUEM SOMOS</a>
+                            </li>
+                            <li class="itensMapaSite ttPadrao">
+                                <a class="js-link" data-var="--link-servicos" href="servicos.html">SERVIÇOS</a>
+                            </li>
+                            <li class="itensMapaSite ttPadrao">
+                                <a class="js-link" data-var="--link-parceiros" href="parceiros.html">PARCEIROS</a>
+                            </li>
+                            <li class="itensMapaSite ttPadrao">
+                                <a class="js-link" data-var="--link-contatos" href="contatos.html">CONTATOS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- BLOCO 3 -->
+                <section class="divFooter" aria-labelledby="footer-contato">
+                    <div class="umFooter">
+                        <h2 id="footer-contato" class="ttTitulos">CONTATOS</h2>
+                    </div>
+
+                    <div class="doisFooter">
+                        <address id="contatoFooter">
+
+                            <p class="ttPadrao">
+                                <a class="js-link" href="https://wa.me/5511987654321"
+                                   data-var="--link-whatsapp" aria-label="Falar no WhatsApp pelo número 11 99999 9999">
+                                    (11) 99999-9999
+                                </a>
+                            </p>
+
+                            <div id="socialFooter">
+                                <a class="js-link"
+                                   data-var="--link-whatsapp"
+                                   href="https://wa.me/5511987654321"
+                                   aria-label="WhatsApp">
+                                    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+                                </a>
+
+                                <a class="js-link"
+                                   data-var="--link-linkedin"
+                                   href="https://www.linkedin.com/company/comunicala"
+                                   aria-label="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+                                </a>
+
+                                <a class="js-link"
+                                   data-var="--link-instagram"
+                                   href="https://www.instagram.com/comunicala.tils/"
+                                   aria-label="Instagram">
+                                    <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+
+                        </address>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="desenvolvedor">
+        <p class="ttSubtitulos titulosAgrupados">
+            STUDIO RLSKULL<br>
+            <span>2026 - TODOS OS DIREITOS RESERVADOS ©</span>
+        </p>
+    </div>
+</footer>
+
+    <script src="./JS/nav.js"></script>
+    <script src="./JS/link.js"></script>
+    <script src="./JS/animation.js"></script>
+    <script src="./JS/parallax.js"></script>
+
+
+</body>
+
+</html>
