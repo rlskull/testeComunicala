@@ -7,8 +7,9 @@
     <meta name="description" content="ComunicAla: Tradução e interpretação do par linguístico Português | Libras. Conectando vozes entre os povos com acessibilidade e profissionalismo.">
     <title>ComunicAla - Tradução e Interpretação em Libras</title>
     
-    <!-- Preload LCP Image -->
-    <link rel="preload" as="image" href="./IMG/imgPadrao01.png">
+    <!-- Preload LCP Image (Mobile First) -->
+    <link rel="preload" as="image" href="./IMG/imgPadrao01_mobile.png" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="./IMG/imgPadrao01.png" media="(min-width: 769px)">
 
     <link rel="stylesheet" href="./CSS/base.css">
     <link rel="stylesheet" href="./CSS/animation.css">
@@ -20,7 +21,9 @@
     <link rel="stylesheet" href="./CSS/05Home_Depoimento.css">
     <link rel="stylesheet" href="./CSS/06Home_Inclusao.css">
     <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Non-critical CSS / Render-blocking font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"></noscript>
 </head>
 
 <body id="inicio" style="background-color: var(--color01);">
@@ -128,14 +131,19 @@
         <div id="containerBV01">
 
             <div id="imgBV01">
-                <img 
-                    id="imgLogo03"
-                    class="img-bw imagemPersistente"
-                    src="./IMG/imgPadrao01.png"
-                    alt="Logotipo da Comunicala, tradução e interpretação em português e Libras"
-                    width="2048" height="1367"
-                    fetchpriority="high"
-                    decoding="async">
+                <picture>
+                    <source media="(max-width: 768px)" srcset="./IMG/imgPadrao01_mobile.png">
+                    <source media="(min-width: 769px)" srcset="./IMG/imgPadrao01.png">
+                    <img 
+                        id="imgLogo03"
+                        class="img-bw imagemPersistente"
+                        src="./IMG/imgPadrao01.png"
+                        alt="Logotipo da Comunicala, tradução e interpretação em português e Libras"
+                        width="2048" height="1367"
+                        fetchpriority="high"
+                        style="max-width: 100%; height: auto;"
+                        decoding="async">
+                </picture>
             </div>
 
             <div class="caixaTXT">
@@ -372,14 +380,19 @@
     <div id="containerBV06">
 
         <div id="imgBV06">
-            <img
-                id="imgPadrao02"
-                class="fade-in img-bw imagemPersistente"
-                src="./IMG/imgPadrao02.png"
-                alt=""
-                aria-hidden="true"
-                width="2000" height="2834"
-                loading="lazy">
+            <picture>
+                <source media="(max-width: 768px)" srcset="./IMG/imgPadrao02_mobile.png">
+                <source media="(min-width: 769px)" srcset="./IMG/imgPadrao02.png">
+                <img
+                    id="imgPadrao02"
+                    class="fade-in img-bw imagemPersistente"
+                    src="./IMG/imgPadrao02.png"
+                    alt=""
+                    aria-hidden="true"
+                    width="2000" height="2834"
+                    style="max-width: 100%; height: auto;"
+                    loading="lazy">
+            </picture>
         </div>
 
         <div class="caixaTXT">
