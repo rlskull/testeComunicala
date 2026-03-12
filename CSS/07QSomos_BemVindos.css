@@ -26,10 +26,10 @@
     color: var(--color08);
 }
 
-.caixaTXT h1.ttTitulos,
+/* .caixaTXT h1.ttTitulos,
 .caixaTXT h2.ttSubtitulos{
-    color: var(--color04);
-}
+    color: var(--color05);
+} */
 
 /* Estilos responsivos para telas menores */
 @media screen and (max-width: 768px){

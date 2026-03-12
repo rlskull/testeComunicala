@@ -24,8 +24,8 @@
 }
 
 #imgTituloQS h2.ttSubtitulos,
-#imgTituloQS h1.ttTitulos{
-    color: var(--color03);
+#imgTituloQS h2.ttTitulos{
+    color: var(--color02);
     /* font-weight: var(--peso-subtitulo); */
 }
 

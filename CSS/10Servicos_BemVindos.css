@@ -14,17 +14,17 @@
     background-position: center;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: auto;
+    grid-template-rows: repeat(10, 1fr); /* definido para 10 frações iguais */
     gap: 5px;
 }
 
 #imgBV01{
     grid-column: 1 / span 7;
-    grid-row: 3 / span 7; 
+    grid-row: 1 / 11; /* Ocupa do topo ao fundo (total de 10 rows) */
     display: flex;
-    align-items: flex-end; /* faz a imagem ficar no final vertical da célula */
-    justify-content: flex-start; /* ajusta horizontalmente se necessário */
-    height: 100%; /* importante para que o flex alinhe até o fundo */
+    align-items: flex-end; /* garante que a imagem encoste no final */
+    justify-content: flex-start; 
+    height: 100%; 
     padding: 0; 
 }
 
@@ -39,10 +39,10 @@
 
 
 
-#btnBemVindos{
+/* #btnBemVindos{
     grid-column: 9 / span 3;
     grid-row: 6 / span 2;
-    background-color: var(--color03);
+    background-color: var(--color05);
     color: var(--color08);
     font-family: var(--fonte-principal);
     font-weight: var(--peso-negrito);
@@ -63,15 +63,25 @@
 #btnBemVindos:hover{
     transform: scale(1.2);
     background-color: var(--color03);
+} */
+#containerBV01 .caixaTXT {
+    grid-column: 7 / span 5; 
+    grid-row: 1 / 11;   /* centralizado em toda a altura do container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;     
+    padding-left: 0;        
 }
 
 #containerBV01 h1.ttTitulos{
-    color: var(--color04);
-    margin-top: 2rem;
+    color: var(--color05);
+    margin-top: 0; /* removido margem superior para centralizar melhor */
 }
 
 #containerBV01 h2.ttSubtitulos{
-    color: var(--color04);
+    color: var(--color05);
     font-weight: var(--peso-light);
 }
 
@@ -85,19 +95,40 @@
 
 @media screen and (max-width: 768px){
     #containerBV01{
-        width: 90vw;
-        height: 800px;
-        grid-template-columns: repeat(6, 1fr);
+        width: 100vw; /* largura total no mobile para a imagem encostar */
+        height: auto;
+        min-height: 90vh;
+        grid-template-columns: 1fr; /* coluna única simplifica o mobile */
+        grid-template-rows: auto auto; /* duas linhas: texto e depois imagem */
         background-image: url("../IMG/background_bem_vindo_mobile2.webp");
         background-position: center;
+        gap: 0;
+    }
+
+    #containerBV01 .caixaTXT {
+        grid-column: 1;
+        grid-row: 1;
+        padding: 4rem 35px 2rem 35px; /* Ajustado para 35px lateral como no index */
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
     #imgBV01{
-        grid-column: 1 / span 7;
-        grid-row: 5 / span 6;
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        align-items: flex-end;
         justify-content: center;
-
+        height: auto;
+        padding: 0;
+        margin-top: 0; /* Removido margin-top para diminuir o espaço entre texto e imagem */
+        margin-bottom: -1px; /* Garante que encoste no final */
     }
 
-
+    #imgLogo03 {
+        width: 100%;
+        max-width: 450px; /* aumenta o tamanho do mobile */
+        height: auto;
+    }
 }

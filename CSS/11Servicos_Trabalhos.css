@@ -51,8 +51,8 @@
     display: block;
 }
 
-.card-conteudo h3{
-    color: var(--color03);
+.card-conteudo h2{
+    color: var(--color02);
     /* margin-bottom: 10px; */
 }
 
@@ -63,7 +63,7 @@
 }
 
 .card-conteudo .ttPadrao{
-    color: #000000;
+    color: var(--color01);
     font-size: 1rem;
     /* margin-top: 5rem; */
     padding-bottom: 10px;

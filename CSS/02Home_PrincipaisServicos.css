@@ -26,7 +26,7 @@
 /* Cores dos títulos */
 #imgBV02 .ttSubtitulos,
 #imgBV02 .ttTitulos {
-    color: var(--color03);
+    color: var(--color02);
 }
 
 /* ===============================
@@ -64,7 +64,7 @@
 
 /* Título do serviço */
 #seisServicos h3.ttSubtitulos {
-    color: var(--color01);
+    color: var(--color02);
     text-align: center;
     font-weight: var(--peso-negrito);
 }

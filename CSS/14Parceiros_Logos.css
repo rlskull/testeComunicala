@@ -23,11 +23,11 @@
     margin-right: 1rem;
 }
 
-#imgBV02 h2.ttSubtitulos,
-#imgBV02 h1.ttTitulos{
+#imgBV02 .ttSubtitulos,
+#imgBV02 .ttTitulos{
     color: var(--color02);
-    /* font-weight: var(--peso-subtitulo); */
 }
+
 
 #parceirosGrid{
     grid-column: 2 / span 10;

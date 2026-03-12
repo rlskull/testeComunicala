@@ -28,7 +28,7 @@
 
 #imgBV02 .ttSubtitulos,
 #imgBV02 .ttTitulos{
-    color: var(--color03);
+    color: var(--color02);
     /* font-weight: var(--peso-subtitulo); */
 }
 
