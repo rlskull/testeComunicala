@@ -52,7 +52,7 @@
 }
 
 .card-conteudo h3{
-    color: #f28c1b;
+    color: var(--color03);
     /* margin-bottom: 10px; */
 }
 
@@ -141,8 +141,7 @@
 
 /*TITULO*/
 #modalTitulo {
-
-    color: var(--color05);
+    color: var(--color03);
 }
 
 
