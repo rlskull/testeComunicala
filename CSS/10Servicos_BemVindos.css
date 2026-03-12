@@ -1,13 +1,13 @@
 #fundoColorido{
     width: 100%;
-    background-color: var(--color09);
+    background-color: var(--color02);
 }
 
 #containerBV01{
     width: 80vw;
     height: 77vh;
     margin: 0 auto;
-    background-color:var(--color09);
+    background-color: var(--color02);
     background-image: url("../IMG/background_bem_vindo2.webp");
     background-repeat: no-repeat;
     background-size: contain;
@@ -42,7 +42,7 @@
 #btnBemVindos{
     grid-column: 9 / span 3;
     grid-row: 6 / span 2;
-    background-color: var(--color04);
+    background-color: var(--color03);
     color: var(--color08);
     font-family: var(--fonte-principal);
     font-weight: var(--peso-negrito);
