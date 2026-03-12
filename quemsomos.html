@@ -6,14 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quem somos - ComunicAla</title>
     <meta name="description" content="Saiba mais sobre a ComunicAla, uma empresa liderada por mulheres negras dedicada à inclusão e acessibilidade através da tradução e interpretação em Libras.">
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&family=Palanquin+Dark:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Preload LCP Image -->
+    <link rel="preload" as="image" href="./IMG/logo_05.webp">
+
     <link rel="stylesheet" href="./CSS/base.css">
-    <link rel="stylesheet" href="./CSS/animation.css">
     <link rel="stylesheet" href="./CSS/menu.css">
     <link rel="stylesheet" href="./CSS/07QSomos_BemVindos.css">
-    <link rel="stylesheet" href="./CSS/08QSomos_MVV.css">
-    <link rel="stylesheet" href="./CSS/09QSomos_Equipe.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Deferred CSS -->
+    <link rel="stylesheet" href="./CSS/animation.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/08QSomos_MVV.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/09QSomos_Equipe.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/footer.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
+
 </head>
 
 <body id="quemsomos" style="background-color: var(--color02);">
@@ -118,7 +130,7 @@
         <section>
             <div id="containerQS01">
                 <div id="imgQS01">
-                    <img id="imgBackground" class="fade-in" src="./IMG/logo_05.webp" alt="Logotipo da ComunicAla colorido" width="2000" height="2000">
+                    <img id="imgBackground" class="fade-in" src="./IMG/logo_05.webp" alt="Logotipo da ComunicAla colorido" width="2000" height="2000" fetchpriority="high" decoding="async">
                 </div>
                 <div class="caixaTXT">
                     <div class="titulosAgrupados">

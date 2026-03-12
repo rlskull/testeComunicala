@@ -120,10 +120,7 @@
 /* CAIXA DE TEXTO */
 .modal-content{
     width: 60%;
-    /* padding: 40px;
-    position: relative; */
-      padding: 3rem;
-    width: 600px;
+    padding: 3rem;
     border-radius: 16px;
     position: relative;
     display: flex;
@@ -133,10 +130,11 @@
 
 .close-modal{
     position: absolute;
-    top: 20px;
-    left: 500px;
+    top: 15px;
+    right: 20px;
     font-size: 2rem;
     cursor: pointer;
+    z-index: 10;
 }
 
 /*TITULO*/
@@ -235,7 +233,8 @@ body.modal-open{
     }
 
     .close-modal{
-    left: 580px;
-
-}
+        top: 10px;
+        right: 15px;
+        color: #000;
+    }
 }
