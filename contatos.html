@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página inicial</title>
     <link rel="stylesheet" href="./CSS/base.css">
-    <link rel="stylesheet" href="./CSS/animation.css">
     <link rel="stylesheet" href="./CSS/menu.css">
     <link rel="stylesheet" href="./CSS/16Contatos_BemVindos.css">
-    <link rel="stylesheet" href="./CSS/17Contatos_Formulario.css">
-    <link rel="stylesheet" href="./CSS/footer.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    
+    <!-- Deferred CSS -->
+    <link rel="stylesheet" href="./CSS/animation.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/17Contatos_Formulario.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="./CSS/footer.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" media="print" onload="this.media='all'">
 </head>
 
 <body id="contato" style="background-color: var(--color06);">
@@ -25,7 +27,7 @@
                 <!-- Logo-->
                 <div id="logo_header">
                     <a href="#inicio" aria-label="Ir para o início da página">
-                        <img id="logo01Header" src="./IMG/logo_01.webp" alt="ComunicAla, Vozes entre os Povos">
+                        <img id="logo01Header" src="./IMG/logo_01.webp" alt="ComunicAla, Vozes entre os Povos" width="2000" height="2000">
                     </a>
                 </div>
 
@@ -168,7 +170,7 @@
 
                     <div id="imgBV01">
                         <img id="imgLogo04" class="fade-in img-bw img-bw imagemPersistente" src="./IMG/imgPadrao04.webp"
-                            alt="logocompleto">
+                            alt="Logotipo ComunicAla em destaque" fetchpriority="high" width="2000" height="2000">
                     </div>
                 </div>
 
