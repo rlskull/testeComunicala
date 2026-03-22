@@ -66,27 +66,36 @@
 @media screen and (max-width: 768px) {
 
     #containerBV04 {
-        width: 90vw;
-        min-height: auto;
-        grid-template-columns: repeat(6, 1fr);
-        padding-bottom: 4rem;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 95vw !important;
+        min-height: auto !important;
+        padding: 4rem 0 !important;
+        gap: 20px !important;
     }
 
     #imgBV04 {
-        grid-column: 2 / span 4;
-        grid-row: 1 / span 3;
-        padding: 50px 0;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0 !important;
+        margin-bottom: 2rem !important;
     }
 
     #imgLogo04 {
-        width: 300px;
-        height: auto;
+        width: 80% !important; /* Larger and responsive */
+        max-width: 400px !important;
+        height: auto !important;
     }
 
     #containerBV04 .caixaTXT {
-        grid-row: 4 / span 5;
-        align-items: center;
-        text-align: center;
+        width: 90% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
     }
 }
 

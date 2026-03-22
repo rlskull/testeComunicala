@@ -49,7 +49,7 @@
     #containerBV06 .caixaTXT {
         order: 1; /* Título e texto primeiro */
         width: 90vw;
-        margin: 3rem auto 2rem auto;
+        margin: 5rem auto 2rem auto;
         padding: 0 20px;
         align-items: center;
         text-align: center;
