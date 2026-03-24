@@ -70,9 +70,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
-    text-align: center;     
-    padding-left: 0;        
 }
 
 #containerBV01 h1.ttTitulos{
@@ -95,35 +92,36 @@
 
 @media screen and (max-width: 768px){
     #containerBV01{
-        width: 100vw; /* largura total no mobile para a imagem encostar */
-        height: auto;
-        min-height: 90vh;
-        grid-template-columns: 1fr; /* coluna única simplifica o mobile */
-        grid-template-rows: auto auto; /* duas linhas: texto e depois imagem */
+        width: 100%;
+        min-height: auto;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         background-image: url("../IMG/background_bem_vindo_mobile2.webp");
         background-position: center;
+        padding-bottom: 0;
+        padding-top: 30px;
         gap: 0;
     }
 
     #containerBV01 .caixaTXT {
-        grid-column: 1;
-        grid-row: 1;
-        padding: 4rem 35px 2rem 35px; /* Ajustado para 35px lateral como no index */
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 5;
+        padding-left: 30px;
+        padding-right: 30px;
         align-items: center;
         text-align: center;
-        width: 100%;
     }
 
     #imgBV01{
-        grid-column: 1;
-        grid-row: 2;
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 5;
         display: flex;
         align-items: flex-end;
         justify-content: center;
         height: auto;
         padding: 0;
-        margin-top: 0; /* Removido margin-top para diminuir o espaço entre texto e imagem */
-        margin-bottom: -1px; /* Garante que encoste no final */
+        margin-top: 0;
+        margin-bottom: -1px;
     }
 
     #imgLogo03 {

@@ -98,16 +98,17 @@
     #containerBV01 {
         width: 100%;
         min-height: auto;
-        grid-template-columns: 1fr;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
         background-image: url("../IMG/background_bem_vindo_mobile.webp");
         background-position: center;
         padding-bottom: 0; /* Para a imagem encostar no final */
+        padding-top: 30px;
     }
 
     #imgBV01 {
-        order: 2; /* Imagem por último */
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 5;
         width: 100%;
         justify-content: center;
         align-items: flex-end;
@@ -124,9 +125,10 @@
     }
 
     .caixaTXT {
-        order: 1; /* Título e texto primeiro */
-        width: 100%;
-        padding: 4rem 35px 2rem 35px;
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 5;
+        padding-left: 30px;
+        padding-right: 30px;
         align-items: center;
         text-align: center;
     }

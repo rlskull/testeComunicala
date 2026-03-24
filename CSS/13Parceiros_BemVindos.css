@@ -40,26 +40,24 @@
 
 
 #containerParceirosBV01 .caixaTXT{
-    grid-column: 7 / span 6;
+    grid-column: 7 / span 5;
     grid-row: 1 / -1;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centralizado na vertical */
-    align-items: center;
+    align-items: flex-start;
 }
 
 #containerParceirosBV01 h1.ttTitulos{
     font-size: 3rem;
     color: var(--color02);
     margin-top: 2rem;
-    text-align: center;
 }
 
 
 #containerParceirosBV01 p.ttPadrao {
   color: var(--color08);
   margin-top: 2rem;
-  text-align: center;
 }
 
 
@@ -67,22 +65,28 @@
 
 @media screen and (max-width: 768px){
     #containerParceirosBV01{
-        width: 90vw;
-        height: 800px;
+        width: 100%;
+        min-height: auto;
+        display: grid;
         grid-template-columns: repeat(6, 1fr);
         background-image: url("../IMG/background_bem_vindo_mobile3.webp");
         background-position: center;
+        padding-bottom: 0;
+        padding-top: 30px;
     }
 
     #imgBV01{
-        grid-column: 1 / -1;
-        grid-row: 4 / 7;
+        grid-column: 1 / span 6;
+        grid-row: 6 / span 5;
         justify-content: center;
     }
 
     #containerParceirosBV01 .caixaTXT{
-        grid-column: 1 / -1;
-        grid-row: 1 / 4;
+        grid-column: 1 / span 6;
+        grid-row: 1 / span 5;
+        padding-left: 30px;
+        padding-right: 30px;
+        align-items: center;
         text-align: center;
     }
 
