@@ -35,10 +35,11 @@
 @media screen and (max-width: 768px){
     #containerQS01 {
         width: 90vw;
-        height: 1000px; /*aumento para ajustar na tela*/
+        height: auto; /* ajustado de 1000px para auto para melhor responsividade */
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: auto;
         padding: 50px 0;/*distância entre o topo e o conteúdo do container*/
+        gap: 20px;
     }
 
     #imgQS01{
@@ -48,10 +49,12 @@
 
     #imgBackground{
         width: 300px;
+        margin: 0 auto;
     }
 
     #containerQS01 .caixaTXT{
-        grid-row: 5 / span 5;
+        grid-column: 1 / span 6 !important;
+        grid-row: 5 / span 5 !important;
         align-items: center;
         text-align: center;
     }

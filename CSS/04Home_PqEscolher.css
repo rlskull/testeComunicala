@@ -25,6 +25,8 @@
 #containerBV04 .caixaTXT {
     grid-row: 2 / span 8;
     color: var(--color01);
+    padding-left: 19px !important;
+    padding-right: 19px !important;
 }
 
 /* Botão agora como link */

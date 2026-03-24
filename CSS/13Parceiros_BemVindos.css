@@ -66,6 +66,7 @@
 @media screen and (max-width: 768px){
     #containerParceirosBV01{
         width: 100%;
+        height: auto;
         min-height: auto;
         display: grid;
         grid-template-columns: repeat(6, 1fr);

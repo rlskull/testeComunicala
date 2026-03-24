@@ -159,7 +159,7 @@
 
     #formContato{
         order: 2;
-        width: 100%;
+        width: 90%;
         max-width: 500px; /* mantém elegante */
     }
 

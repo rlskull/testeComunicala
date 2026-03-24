@@ -50,7 +50,7 @@
         order: 1; /* Título e texto primeiro */
         width: 90vw;
         margin: 5rem auto 2rem auto;
-        padding: 0 20px;
+        padding: 100px 20px;
         align-items: center;
         text-align: center;
     }

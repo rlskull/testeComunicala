@@ -97,7 +97,7 @@
 
     #containerBV01 {
         width: 100%;
-        min-height: auto;
+        min-height: 1000px;
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         background-image: url("../IMG/background_bem_vindo_mobile.webp");

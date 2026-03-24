@@ -16,11 +16,15 @@
     align-items: flex-end;
     justify-content: center;
     height: 100%;
-    padding: 0; 
+    padding: 0;
+    margin-bottom: 0;
 }
 
 #imgPadrao03{
     width: 570px;
+    display: block;
+    margin: 0;
+    margin-top: auto;
 }
 
 #containerQS02 .caixaTXT {
@@ -59,6 +63,10 @@
     #imgQS02{
         grid-column: 1 / span 6;
         grid-row: 7 / span 3;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        margin-bottom: 0;
     }
 
     #imgPadrao03{
@@ -85,7 +93,9 @@
         grid-column: 1 / span 7;
         grid-row: 1 / span 10;
         display: flex;
+        align-items: flex-end;
         justify-content: center;
+        margin-bottom: 0;
         /* height: 80%; */
     }
 
